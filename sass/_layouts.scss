@@ -1,0 +1,21 @@
+.flex-vertical-center {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+//Smaller gap between items
+.flex-col + .flex-col {
+    margin-top: 0.3em;
+}
+
+//Larger gap between items
+.flex-col-2 + .flex-col-2 {
+    margin-top: 1.3em;
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .flex-col + .flex-col {
+        margin-top: 0;
+    }
+}

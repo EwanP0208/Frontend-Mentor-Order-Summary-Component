@@ -1,0 +1,26 @@
+//Layout
+$breakpoint-desktop: 1440px;
+$breakpoint-mobile: 510px;
+
+//Colours
+//- Primary
+$colour-pale-blue: hsl(225, 100%, 94%);
+$colour-bright-blue: hsl(245, 75%, 52%);
+$colour-bright-purple: #766cf1;
+
+//- Neutral
+$colour-very-pale-blue: hsl(225, 100%, 98%);
+$colour-desaturated-blue: hsl(224, 23%, 55%);
+$colour-dark-blue: hsl(223, 47%, 23%);
+
+//Typography
+$base-font-size: 16px;
+$base-font-family: 'Red Hat Display', sans-serif;
+
+//Font weighting
+$font-weight-regular: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$border-radius: 1.5em;
+$border-radius-small: 0.75em;

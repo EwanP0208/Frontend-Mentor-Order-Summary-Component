@@ -1,0 +1,146 @@
+@import "sass/variables";
+@import "sass/layouts";
+@import "sass/components";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+}
+
+p, h2 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.background-pattern {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: $colour-pale-blue;
+}
+
+.challenge-container {
+    margin: 0 auto;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.order-summary {
+    border-radius: $border-radius;
+    max-width: 29em;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 1em 2em -1em $colour-desaturated-blue;
+}
+
+.hero__image {
+    border-radius: $border-radius $border-radius 0 0;
+}
+
+.summary {
+    padding: 3em;
+    background-color: white;
+    border-radius: 0 0 $border-radius $border-radius;
+}
+
+.summary__title, .summary__text {
+    text-align: center;
+}
+
+.summary__title {
+    color: $colour-dark-blue;
+    font-weight: $font-weight-black;
+    font-size: 1.8rem;
+}
+
+.summary__text {
+    color: $colour-desaturated-blue;
+    font-weight: $font-weight-regular;
+    line-height: 1.7em;
+    max-width: 30ch;
+    margin: 1em auto;
+}
+
+.plan-info {
+    border-radius: $border-radius-small;
+    background-color: $colour-very-pale-blue;
+    padding: 1.5em;
+
+    display: grid;
+    grid-template-columns: 3em auto 3.5em;
+    grid-gap: 1em;
+}
+
+.plan-info__name {
+    color: $colour-dark-blue;
+    font-weight: $font-weight-black;
+}
+
+.plan-info__cost {
+    color: $colour-desaturated-blue;
+}
+
+.plan-info__change {
+    font-size: 0.91em;
+    font-weight: $font-weight-bold;
+    color: $colour-bright-blue;
+
+    &:hover {
+        color: $colour-bright-purple;
+        text-decoration: none;
+    }
+}
+
+.summary__controls {
+    margin-top: 2em;
+}
+
+.attribution {
+    background-color: $colour-pale-blue;
+}
+
+//Mobile styling
+@media (max-width: $breakpoint-mobile) {
+    body {
+        font-size: 15px;
+    }
+
+    .background-pattern {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+
+    .challenge-container {
+        padding: 1.5em;
+    }
+
+    .summary {
+        padding: 1.5em;
+    }
+
+    .summary__title {
+        font-size: 1.4rem;
+    }
+   
+    .summary__text {
+        margin: 1.4em auto;
+        max-width: 25ch;
+    }
+
+    .plan-info {
+        padding: 1em;
+    }
+}
